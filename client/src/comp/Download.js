@@ -1,16 +1,16 @@
 import React from 'react';
-import baseFormat from '../formats/baseFormat';
+import hrDataLoad from '../loaders/hrDataLoad';
 
 class Download extends React.Component {
   downloadCSV() {
-    let baseObject = new baseFormat();
+    let baseObject = new hrDataLoad();
     
     let csvInput = 'Employee_ID,';
     let filename = 'testfile.csv';
     var csvFile;
     var downloadLink;
 
-    csvInput = baseObject.outputAsCSV();
+    csvInput = baseObject.outputCSV();
     console.log(csvInput);
 
     // csvFile = new Blob([csvInput], {type:"text/csv"});

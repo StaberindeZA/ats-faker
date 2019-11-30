@@ -11,6 +11,7 @@ class baseFormat {
 
   constructor() {
     // Use the Constructor to set default values.
+    this.Employee_ID = 500001;
     this.Legal_Entity = 'LE-1';
     this.Cost_Center = 'CC-1';
   }
